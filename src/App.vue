@@ -22,9 +22,7 @@ export default {
 
 <style lang="less">
 
-html,body, #app {
-  height:100%;
-}
+@import "./assets/common";
 
 @media (max-width: 768px) { // 也就是说0-768的宽度使用下面的样式   响应式
   #app {
