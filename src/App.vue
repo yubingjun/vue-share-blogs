@@ -21,9 +21,21 @@ export default {
 </script>
 
 <style lang="less">
+
 html,body, #app {
   height:100%;
 }
+
+@media (max-width: 768px) { // 也就是说0-768的宽度使用下面的样式   响应式
+  #app {
+    grid-template-columns: 10px auto 10px;
+    #header,#footer {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
 #app {
   display: grid;
   grid-template-columns: 12% auto 12%;
