@@ -29,6 +29,10 @@ const router = new Router({
       component: Register
     },
     {
+      path: '/detail/',
+      component: Detail
+    },
+    {
       path: '/detail/:blogId',
       component: Detail
     },
