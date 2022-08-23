@@ -49,6 +49,7 @@ import { mapGetters, mapActions} from 'vuex'
       ]),
 
       onLogout() {
+        console.log('here')
         this.logout()
       }
     }
