@@ -72,7 +72,7 @@ const router = new Router({
       meta:{ requiresAuth: true }
     },{
       path:'/create',
-      component:() => import('../pages/Index/template.vue'),
+      component:() => import('../pages/Create/template.vue'),
       meta:{ requiresAuth: true }
     },{
       path:'/user/userId',
