@@ -75,7 +75,7 @@ const router = new Router({
       component:() => import('../pages/Create/template.vue'),
       meta:{ requiresAuth: true }
     },{
-      path:'/user/userId',
+      path:'/user',
       component:() => import('../pages/User/template.vue')
     },{
       path:'/my',
