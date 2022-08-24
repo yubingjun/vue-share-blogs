@@ -3,7 +3,7 @@
     <h1>创建文章</h1>
     <h3>创建标题</h3>
     <el-input v-model="title"></el-input>
-    <p class="msg">限30个字</p>
+    <p class="msg">限10个字</p>
     <h3>内容简介</h3>
     <el-input type="textarea" v-model="description" :autosize="{ minRows: 2, maxRows: 6}"></el-input>
     <p class="msg">限30个字</p>

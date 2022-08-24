@@ -3,9 +3,7 @@ import { Message } from 'element-ui'
 
 axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded'
 axios.defaults.baseURL = '//blog-server.hunger-valley.com'
-//axios.defaults.baseURL = '//localhost:3006'
 
-window.request = request
 
 export default function request(url, type = 'GET', data = {}) {
   return new Promise((resolve, reject) => {
@@ -23,7 +21,7 @@ export default function request(url, type = 'GET', data = {}) {
     }
 
     axios(option).then(res => {
-      // console.log(res.data)
+      console.log(res.data)
       if(res.data.status === 'ok') {
         if(res.data.token) {
           localStorage.token = res.data.token
@@ -41,7 +39,7 @@ export default function request(url, type = 'GET', data = {}) {
 }
 
 /*
-// 在 App.vue 里 import request from './helpers/request' 
+// 在 App.vue 里 import request from './helpers/request'
 // 打开浏览器控制台， 运行如下代码做测试
 request('/auth/login', 'POST', {username: 'hunger', password: '123456'})
   .then(data=>{
