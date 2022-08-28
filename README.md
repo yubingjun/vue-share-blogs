@@ -1,4 +1,4 @@
-# blog-client
+# Share-blog
 
 > A Vue.js project
 
